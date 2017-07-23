@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+	border: 1px solid red;
+	width: 200vw;
+	display: flex;
+	position: relative;
+}
+
+.page {
+	height: 100vh;
+	width: 100vw;
+}
+
+.one {
+	border: 1px solid green;
+}
+
+.two {
+	border: 1px solid blue;
+}
+
+.nav-container {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	.nav-sub-container {
+		width: 15vw;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+	}
+	.nav {
+		background: gray;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.nav-right {
+		right: 0;
+	}
+	.nav-left {
+		left: 0;
+	}
+}
+
+.icon-container {
+	position: absolute;
+	top: calc(50% - 32px);
+	left: calc(50% - 32px);
+	.circle	{
+		display: flex;
+		justify-content: center;
+		height: 64px;
+		width: 64px;
+		border-radius: 50%;
+		border: 4px solid black;
+		overflow: hidden;
+		img {
+	    margin-left: -4px;
+			animation: example 2s infinite;
+		}
+	}
+}
+
+@keyframes example {
+	0% {
+		transform: translateX(300%);
+	}
+	50% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-300%);
+	}
+}

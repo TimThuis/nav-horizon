@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./style.min.css">
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="nav-sub-container nav-left">
+        <div onmousemove='EnterNav(event, this, "left")' onmouseleave='LeaveNav(this)' class="nav"></div>
+        <div class="icon-container">
+          <div class="circle">
+            <img src="./src/arrow-left.svg" alt="arrow-left">
+          </div>
+        </div>
+      </div>
+
+      <!-- <div onmousemove='EnterNav(event, this, "right")' onmouseleave='LeaveNav(this)' class="nav nav-right"></div> -->
+    </div>
+    <div class="page one"></div>
+    <div class="page two"></div>
+  </body>
+
+  <script src="./main.js"></script>
+</html>
